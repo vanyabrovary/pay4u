@@ -28,7 +28,7 @@ cpan
 cpan install URI YAML Crypt::Digest::SHA512 JSON::Parse Log::Log4perl JSON::Syck::Dump Data::Table
 </pre>
 
-configure
+### configure
 
 <pre>
 tar -xzf perl.tar.gz 
@@ -38,36 +38,36 @@ chown -R www-data:www-data /etc/nginx/perl && chmod -R 775 /etc/nginx/perl
 /etc/init.d/nginx restart
 </pre>
 
-#### cfg.ini
+### cfg.ini
 
 This configuration file contain settings specific to an application.
 
-cfg.ini location.
+#### cfg.ini location.
 
 <pre>
 ls -la /etc/nginx/perl/cfg.ini
 </pre>
 
-cfg.ini contents.
+#### cfg.ini contents.
 
 <pre>
 cat /etc/nginx/perl/cfg.ini
 
-MerchantCOde
+##### Merchant code
 
 [MPOLO]
 MerchantCode=ACOS
 Key=978y8ygbyv8
 url=http://tp.moneypolo.com/process.php
 
-MerchantCOde for transite account
+##### MerchantCOde for transite account
 
 [MPOLOA]
 MerchantCode=ACOS
 Key=ijh9767t899bh809vy
 url=http://tp.mpolo.com/api.openaccount.php
 
-Default settings
+##### Default settings
 
 [DEF]
 SPTestMode=1			# активировать тестовый режим
@@ -80,7 +80,7 @@ SPPaymentMethod=CC									# тип оплаты (в данном случае, 
 SPSuccessURL=http://bla.com/paments/mpr-url.html 	# тут понятно 
 SPFailURL=http://bla.com/payents/mpc-url.html 		# тут, тоже понятно
 
-DB MySQL
+##### DB MySQL
 
 [DB4U]
 h=127.0.0.1
@@ -88,18 +88,12 @@ n=brand
 u=de
 p=Tf
 
-Logger (ALL, DEBUG, ERROR, NONE)
+##### Logger (ALL, DEBUG, ERROR, NONE)
 
 [LOG]
 file=/var/log/perl.log 	# файл
 level=DEBUG 					# детализация
 </pre>
-
-cfg.ini keys sections.
-
-|*Секция*|*описание*|*url*|*MerchantCode*|*Key*|
-|*[МPOLOA]* _от "MPOLOAccount"_|создание аккаунта|http://tp.mpolo.com/api.openaccount.php|NIKOS| s=rwrfsaopjfisf&^%*&^(& |
-|*[MPOLO]* _без "A"_|для оплаты|http://tp.mpolo.com/process.php|NIKOS| ssdfaaaas435rfsaopjfisf&^%*&^(& |
 
 ### Example.
 
