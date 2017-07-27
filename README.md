@@ -52,7 +52,11 @@ ls -la /etc/nginx/perl/cfg.ini
 
 <pre>
 cat /etc/nginx/perl/cfg.ini
+</pre>
 
+#### cfg.ini description.
+
+<pre>
 ##### Merchant code
 
 [MPOLO]
