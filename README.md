@@ -38,7 +38,7 @@ chown -R www-data:www-data /etc/nginx/perl && chmod -R 775 /etc/nginx/perl
 /etc/init.d/nginx restart
 </pre>
 
-cfg.ini
+#### cfg.ini
 
 This configuration file contain settings specific to an application.
 
